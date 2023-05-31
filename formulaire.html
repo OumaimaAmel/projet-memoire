@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Aidons <span>- Les</span>  </h2>
+        </div>
+        <ul> 
+       <li class="active">
+            <a href='index.html'>ACCEUIL</a> 
+        </li>
+            <li>
+                <a href="#">AIDE</a>
+            </li>
+            <li>
+                <a href='contact.html'>CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+    
+    <div class="container">
+        <h1 class="form-title">Inscription</h1>
+        <form action="formulaire.php" method="post">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="fullName">Nom</label>
+                    <input type="text" id="nom"
+                    name="Nom"
+                    placeholder="Entrez votre nom">
+                </div>
+                <div class="user-input-box">
+                    <label for="username">Prénom</label>
+                    <input type="text" id="prenom"
+                    name="prenom"
+                    placeholder="Entrez votre prénom">
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"
+                    name="email"
+                    placeholder="Entrez votre email">
+                </div>
+                <div class="user-input-box">
+                    <label for="phoneNumber">N°Téléphpne</label>
+                    <input type="nombre" id="nmbr"
+                    name="nmbr"
+                    placeholder="Entrez votre N°Téléphpne">
+                </div>
+                <div class="user-input-box">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="pass"
+                    name="pass"
+                    placeholder="Entrez votre mdps">
+                </div>
+                <div class="user-input-box">
+                    <label for="adreese">Adresse</label>
+                    <input type="text" id="adr"
+                    name="adr"
+                    placeholder="Confirmez votre mdps">
+                </div>
+                <div class="choix"> 
+                <label for="choix">choisir votre type:</label>
+                <select name="choix" id="choix">
+                    <option value=""> Ici</option>
+                    <option value="Donateur">Donateur</option>
+                    <option value="Handicape">Handicapé</option>
+                </select>
+            </div>
+                <div class="form-sumbit-btn">
+                    <input type="submit" name="valide" value="connecter">
+                </div>
+            </div>
+            
+            </div>
+            
+        </form>
+        <script>const formdon = document.querySelector('form');
+
+            // Validation du formulaire lorsqu'il est soumis
+            formulaire.addEventListener('submit', (event) => {
+              event.preventDefault(); // Empêche le formulaire d'être envoyé
+            
+              // Récupération des données du formulaire
+              const fullName = formulaire.querySelector('[for="nom"] + input').value.trim();
+              
+              const userName = formulaire.querySelector('[for="prenom"] + input').value.trim();
+              const email = formulaire.querySelector('[for="email"] + input').value.trim();
+              const phoneNumber = formulaire.querySelector('[for="nmbr"] + input').value.trim();
+              const password = formulaire.querySelector('[for="pass"] + input').value.trim();
+              const adresse = formulaire.querySelector('[for="adr"] + input').value.trim();
+              // Validation des entrées de l'utilisateur
+              if (fullName === '' || userName === '' || email === ''|| phoneNumber === ''|| password === ''|| adresse === '') {
+                alert('Veuillez remplir tous les champs');
+                return;
+              }
+            
+             
+              
+              
+            });
+            
+            
+        </script>
+        
+
+</body>
+</html>

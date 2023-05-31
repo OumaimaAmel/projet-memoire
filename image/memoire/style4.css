@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: center;
+}
+    body {
+    background-color: darkgray;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #f0e6e6;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 17px;
+}
+.logo span{
+color: rgb(69, 163, 163);
+font-size: 27px;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #fdfcfc;
+    color: #000;
+
+
+}
+form{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-family: 'Robot', sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form h1{
+    font-size: 20px;
+}
+
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: blueviolet;
+}
+
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747Cdf;
+    border-radius: 5px;
+
+}
+
+form .corps-formulaire .droite{
+    margin-left: 40px;
+}
+form .corps-formulaire .droite{
+    height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747Cdf;
+    outline: none;
+    border-radius: 5px;
+    
+
+}
+form .pied-formulaire button{
+    margin-top: 10px;
+    background-color: #747Cdf;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
+.product-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  select {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+@media screen and (max-width:920px){
+    form .corps-formulaire .droite{
+        margin-left: 0px;
+    }
+    
+}

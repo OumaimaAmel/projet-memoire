@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: center;
+}
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/homme-handicape-complet-voyageant-chien_23-2149094659.avif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #1a1515;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 17px;
+}
+.logo span{
+color: rgb(69, 163, 163);
+font-size: 27px;
+}
+img{
+    width: 100%;
+}
+.logo img{
+    width: 34px;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #0f0c0c;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #141313;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #eeebeb;
+    color: #000;
+
+
+}
+.titre {
+    width: 1200px;
+    height: auto;
+    color: #fff;
+    position:relative;
+     margin: 0 auto;
+     top: 10%;
+    
+}
+.titre h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: #fff;
+
+}
+    
+.titre .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: cornsilk;
+
+}
+.form {
+    width: 250px;
+    height: 280px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%,);
+    position: absolute;
+    top: -90px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+    border: 0.9px solid #fff;
+}
+.form h2{
+    width: 200px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: rgb(15, 18, 20);
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+.form input{
+    width: 210px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #e0aaaa;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.btnn{
+    width: 190px;
+    height: 40px;
+    background: #3bac53;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+   
+}
+
+.btnn:hover{
+    background:#fff;
+    color: #3bac53;
+}
+.btnn a{
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+.btn{
+    width: 190px;
+    height: 40px;
+    background: #b1eec3;
+    border:  none;
+    margin-top: 1px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #0e0b0b;
+    transition: 0.4s ease;
+    margin-left: 900px;
+    
+    
+    
+}
+
+.btn:hover{
+    background: #c3f0cd;
+    color: #3bac53;
+}
+.btn a{
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+.form .par{
+    margin-top: 8px;
+    letter-spacing: 0.2px;
+}
+@media (max-width: 1150px){
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+
+}
+@media (max-width: 991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+.containe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.object-img{
+    flex: 1 1 21rem;
+}
+
+.object-text{
+    flex: 1 1 21rem;
+    color: var(--second-color);
+}
+.object-text p{
+    margin: 0.5rem 0 1érem;
+    text-align: justify;
+}

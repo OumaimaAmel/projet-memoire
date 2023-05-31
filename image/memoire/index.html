@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Aidons <span>- Les</span>  </h2>
+        </div>
+        <ul> 
+       <li class="active">
+            <a href="#">ACCEUIL</a> 
+        </li>
+            <li>
+                <a href="#">SECONNECTER</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div class="titre">
+            <h1>Espace  pour aider  <br>les handicapées</h1>
+            <p class="par"> Nous avons réalisé cette platforme a fin d'aide <br> les personnes handicapées  et de répondre à leurs besoins.</p>
+             <form action="index.php" ></form> 
+             <div class="form">
+                <h2>Authentification</h2>
+                <input type="email" name="email" placeholder="Entrer votre email/Numro de téléphone">
+                <input type="password" name="" placeholder="Entrer votre mot de passe">
+                <button class="btnn"> <a href="#">Connecter</a> </button>
+                <p class="par">Tu n'as pas un compte</p>
+                <button class="btn"><a href="#">Crée un compte</a></button>
+            </div>
+             </div>
+            </form>
+        </div>
+    
+    
+    <script>
+        const form = document.querySelector('.form');
+        const emailInput = form.querySelector('input[name="email"]');
+        const passwordInput = form.querySelector('input[type="password"]');
+        const loginButton = form.querySelector('.btnn');
+        const createAccountButton = form.querySelector('.btn');
+        
+        // Gestion de la soumission du formulaire
+        form.addEventListener('submit', (event) => {
+          event.preventDefault(); // Empêche l'envoi du formulaire
+        
+          const email = emailInput.value.trim();
+          const password = passwordInput.value.trim();
+        
+          // Validation des entrées
+          if (email === '' || password === '') {
+            alert('Veuillez remplir tous les champs');
+            return;
+          }
+        
+          // Envoyer les données au serveur ou effectuer des actions supplémentaires
+          // Exemple : connexion avec les informations d'identification fournies
+        
+          // Réinitialiser les champs du formulaire
+          emailInput.value = '';
+          passwordInput.value = '';
+        
+          // Redirection vers une autre page ou affichage d'un message de succès
+          alert('Authentification réussie !');
+        });
+        
+        // Gestion du clic sur le bouton de création de compte
+        createAccountButton.addEventListener('click', (event) => {
+          event.preventDefault(); // Empêche la navigation vers le lien
+        
+          // Redirection vers la page de création de compte
+          window.location.href = 'lien_vers_page_creation_compte';
+        });
+        </script>
+        
+    </header>
+    
+</body>
+</html>

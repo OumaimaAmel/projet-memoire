@@ -1,0 +1,323 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: center;
+}
+header {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./image/back.avif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+body{
+    background-color: #d1d0d3;
+}
+
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #e7e4e4;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 17px;
+}
+.logo span{
+color: rgb(69, 163, 163);
+font-size: 27px;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #e0dbdb;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #afabab;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #fdfcfc;
+    color: #000;
+
+}
+
+.content{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #383636;
+    height: 100vh;
+}
+.content h1{
+    font-size: 40px;
+    text-align: center;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.content button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: rgba(233, 229, 225, 0.467);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    left: 50%;
+}
+.produits_texte{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: #424144;
+
+}
+ 
+
+.section_produits{
+    padding: 40px 5%;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin-top: 3%;
+}
+.produits .carte{
+    width: 310px;
+    background: #f0e6e6;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+}
+.produits .carte .desc{
+    padding: 5px 20px;
+    opacity: 0.8
+}
+.produits .carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0  20px;
+
+}
+.produits .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.produits .carte .select{
+    font-size: 13px;
+    font-weight: 900;
+    color: aqua;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+.produits .carte .box .select{
+    cursor: pointer;
+    background-color: #424144;
+    color: #fff;
+}
+footer{
+    background: #f0e6e6;
+    height: 10vh;
+}
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+footer a{
+    text-align: center;
+    color: #f63e4e;
+    font-weight: bold;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6 ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.Nom h1{
+    margin-top: 45%;
+    top: 30%;
+    left: 20%;
+    color: #868283;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #424144;
+    padding: 0  20px;
+
+}
+footer{
+    background-color: #050505;
+    margin-top: 7%;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+ .socialIcons a i{
+    font-size: 2em;
+    color: #000;
+    opacity: 0.9;
+ }
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+  /* Style pour la section contenant la liste des commandes */
+  section {
+    margin: 20px;
+  }
+
+  /* Style pour l'en-tête "Liste des commandes" */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Style pour chaque élément de commande dans la liste */
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+
+  
+  /* Style pour la section contenant la liste des commandes */
+  section {
+    margin: 20px;
+  }
+
+  /* Style pour l'en-tête "Liste des commandes" */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Style pour chaque élément de commande dans la liste */
+  ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+
+  /* Style pour les span contenant le nom du produit et la quantité */
+  ul li span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  /* Style pour les boutons Accepter et Refuser */
+  ul li form {
+    display: inline-block;
+  }
+
+  ul li form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  ul li form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+

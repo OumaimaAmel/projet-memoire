@@ -1,0 +1,46 @@
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #1a1515;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 17px;
+}
+.logo span{
+color: rgb(69, 163, 163);
+font-size: 27px;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #0f0c0c;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #141313;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #eeebeb;
+    color: #000;
+
+
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Aidons <span>- Les</span>  </h2>
+        </div>
+        <ul> 
+       <li class="active">
+            <a href="#">ACCEUIL</a> 
+        </li>
+            <li>
+                <a href="#">AIDE</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</header>
+<form action="form2.php" method="POST" >
+   <h1>Roucherche un don</h1>
+   <div class="separation"></div>
+   <div class="corps-formulaire">
+    <div class="gauche" >
+        <div class="groupe">
+            <label>Nom produit</label>
+            <input type="text">
+        </div>
+        <div class="groupe">
+            <label for="adresse">Adresse de Livraison</label>
+            <input type="text">
+        </div>
+        <div class="groupe">
+            <label>Quantit"</label>
+            <input type="number">
+        </div>
+
+    </div>
+    <div class="droite">
+        <div class="groupe">
+            <label>Description</label>
+            <textarea></textarea>
+        </div>
+    </div>
+</div>
+<div class="product-selection">
+    <h2>Stock de produits</h2>
+    <select id="product-list">
+      <option value="">Sélectionner un produit</option>a 
+      <option value="p1">Produit 1</option>
+      <option value="p2">Produit 2</option>
+      <option value="p3">Produit 3</option>
+      <option value="p4">Produit 4</option>
+    </select>
+    <button id="select-product-btn">Sélectionner</button>
+  </div>
+<div class="pied-formulaire"  align="center">
+    <button type="submit">Envoyez la commande</button>
+</div>
+
+ </form>
+
+ <script>
+    const form = document.querySelector('form');
+    
+    // Validation du formulaire lorsqu'il est soumis
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Empêche le formulaire d'être envoyé
+    
+      // Récupération des données du formulaire
+      const nomProduit = form.querySelector('input[name="nom_produit"]').value.trim();
+      const adresseLivraison = form.querySelector('input[name="adresse_livraison"]').value.trim();
+      const quantite = form.querySelector('input[name="quantite"]').value.trim();
+      const description = form.querySelector('textarea[name="description"]').value.trim();
+    
+      // Validation des entrées de l'utilisateur
+      if (nomProduit === '' || adresseLivraison === '' || quantite === '' || description === '') {
+        alert('Veuillez remplir tous les champs');
+        return;
+      }
+    
+      if (isNaN(quantite) || quantite <= 0) {
+        alert('Veuillez saisir une quantité valide');
+        return;
+      }
+    
+      // Soumission du formulaire
+      form.submit();
+    });
+    
+    const selectProductBtn = document.getElementById('select-product-btn');
+    const productSelect = document.getElementById('product-list');
+    
+    selectProductBtn.addEventListener('click', () => {
+      const selectedProduct = productSelect.value;
+      if (selectedProduct) {
+        alert(`Vous avez sélectionné le produit ${selectedProduct}`);
+      } else {
+        alert('Veuillez sélectionner un produit');
+      }
+    });
+    </script>
+    
+   
+</body>
+</html>

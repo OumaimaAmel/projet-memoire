@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+    
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Aidons <span>- Les</span>  </h2>
+        </div>
+        <ul> 
+       <li class="active">
+            <a href="#">ACCEUIL</a> 
+        </li>
+            <li>
+                <a href="#">AIDE</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</header>
+<form action="form1.php" method="POST">
+   <h1>Fais un don</h1>
+   <div class="separation"></div>
+   <div class="corps-formulaire">
+    <div class="gauche" >
+        <div class="groupe">
+            <label for="nom">Nom du produit</label>
+            <input type="text">
+        </div>
+        <div class="groupe">
+            <label for="adresse">Adresse de Livraison</label>
+            <input type="text">
+        </div>
+        <div class="groupe">
+            <label for="quantité">Quantité</label>
+            <input type="number">
+        </div>
+
+    </div>
+    <div class="droite">
+        <div class="groupe">
+            <label>Description</label>
+            <textarea placeholder="definition de produit......"></textarea>
+        </div>
+    </div>
+</div>
+<div class="pied-formulaire"  align="center">
+
+   <button type="submit">Envoyez le don</button>
+</div>
+
+ </form>
+ <script>const formdon = document.querySelector('form');
+
+    // Validation du formulaire lorsqu'il est soumis
+    formdon.addEventListener('submit', (event) => {
+      event.preventDefault(); // Empêche le formulaire d'être envoyé
+    
+      // Récupération des données du formulaire
+      const nomProduit = formdon.querySelector('[for="nom"] + input').value.trim();
+      const adresseLivraison = formdon.querySelector('[for="adresse"] + input').value.trim();
+      const quantite = formdon.querySelector('[for="quantité"] + input').value.trim();
+      const description = formdon.querySelector('textarea').value.trim();
+    
+      // Validation des entrées de l'utilisateur
+      if (nomProduit === '' || adresseLivraison === '' || quantite === '' || description === '') {
+        alert('Veuillez remplir tous les champs');
+        return;
+      }
+    
+      if (isNaN(quantite) || quantite <= 0) {
+        alert('Veuillez saisir une quantité valide');
+        return;
+      }
+    
+      
+    });
+    
+    
+</script>
+</body>
+</html>

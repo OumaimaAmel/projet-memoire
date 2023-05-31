@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormDon</title>
+    <link rel="stylesheet" href="formdon.css">
+    
+    
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Aidons <span>- Les</span>  </h2>
+        </div>
+        <ul> 
+       <li class="active">
+            <a href='index.html'>ACCEUIL</a> 
+        </li>
+            <li>
+                <a href="#">AIDE</a>
+            </li>
+            <li>
+                <a href='contact.html'>CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</header>
+<form action="form1.php" method="POST">
+   <h1>Fais un don</h1>
+   <div class="separation"></div>
+   <div class="corps-formulaire">
+    <div class="gauche" >
+        <div class="groupe">
+            <label for="nom">NomProduit</label>
+            <input type="text" name="nom_produit">
+            </div>
+            <div class="groupe">
+                <select name="choix" id="choix">
+                    <option value="">Veuillez choisir le type de don</option>
+                    <option value="Médicaments">Médicaments</option>
+                    <option value="Matériel">Matériel</option>
+                </select>
+             </div>
+            
+        <div class="groupe">
+            <label for="quantité">quantite</label>
+            <input type="number" name="quantite">
+        </div>
+
+    </div>
+    <div class="droite">
+        <div class="groupe">
+            <label for="description">Description</label>
+            <textarea name="description" placeholder="Définition du produit..."></textarea>
+         </div>
+        
+    </div>
+</div>
+<div class="pied-formulaire"  align="center">
+
+   <button type="submit">Envoyez le don</button>
+</div>
+
+ </form>
+ 
+</body>
+</html>

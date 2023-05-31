@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: center;
+}
+    body {
+    background-color:#afaeae;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    
+}
+header {
+    background-image: url(./image/depositphotos_383897692-stock-photo-texture-and-seamless-background-of.jpg);
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #181414;
+    font-size: 25px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 17px;
+}
+.logo span{
+color: rgb(69, 163, 163);
+font-size: 27px;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: #1a1616;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #1d1b1b;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background: #e0d7d7;
+    color: #000;
+
+
+}
+form{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    font-family: 'Robot', sans-serif;
+    font-weight: bold;
+    box-shadow: inset -2px 2px 2px #fff;
+    background-color: #e6e4e4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form h1{
+    font-size: 20px;
+}
+
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: blueviolet;
+}
+
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747Cdf;
+    border-radius: 5px;
+
+}
+
+form .corps-formulaire .droite{
+    margin-left: 40px;
+}
+form .corps-formulaire .droite{
+    height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747Cdf;
+    outline: none;
+    border-radius: 5px;
+    
+
+}
+form .pied-formulaire button{
+    margin-top: 10px;
+    background-color: #747Cdf;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
+@media screen and (max-width:920px){
+    form .corps-formulaire .droite{
+        margin-left: 0px;
+    }
+    
+}
+
+select{
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    margin-top: 15%;
+    color: #000;
+    background-color: #fff;
+
+}
